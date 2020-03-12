@@ -87,13 +87,13 @@ class CityListTest {
         assertEquals(0, city.compareTo(cityList.getCities().get(0)));
     }
 
-    @Test
-    void deleteAllCities() {
-        CityList cityList = mockCityList();
-
-        cityList.deleteAll();
-        assertEquals(0, cityList.countCities());
-    }
+//    @Test
+//    void deleteAllCities() {
+//        CityList cityList = mockCityList();
+//
+//        cityList.deleteAll();
+//        assertEquals(0, cityList.countCities());
+//    }
 
     @Test
     void testDeleteException() {
