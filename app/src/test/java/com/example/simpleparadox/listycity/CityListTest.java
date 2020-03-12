@@ -88,6 +88,14 @@ class CityListTest {
     }
 
     @Test
+    void deleteAllCities() {
+        CityList cityList = mockCityList();
+
+        cityList.deleteAll();
+        assertEquals(0, cityList.countCities());
+    }
+
+    @Test
     void testDeleteException() {
         CityList cityList = mockCityList();
 
